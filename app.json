@@ -1,0 +1,35 @@
+{
+  "expo": {
+    "name": "LimkokwingProspectusApp",
+    "slug": "LimkokwingProspectusApp",
+    "version": "1.0.0",
+    "orientation": "portrait",
+    "userInterfaceStyle": "light",
+    "newArchEnabled": true,
+    "ios": {
+      "supportsTablet": true
+    },
+    "android": {
+      "adaptiveIcon": {
+        "backgroundColor": "#ffffff"
+      },
+      "edgeToEdgeEnabled": true,
+      "permissions": [
+        "android.permission.RECORD_AUDIO",
+        "android.permission.MODIFY_AUDIO_SETTINGS"
+      ],
+      "package": "com.anonymous.LimkokwingProspectusApp"
+    },
+    "web": {},
+    "plugins": [
+      "expo-video",
+      "expo-audio",
+      "expo-web-browser"
+    ],
+    "extra": {
+      "eas": {
+        "projectId": "8dacfabc-2125-4293-a8be-b434f8b43836"
+      }
+    }
+  }
+}
