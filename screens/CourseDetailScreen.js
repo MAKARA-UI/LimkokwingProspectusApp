@@ -69,7 +69,7 @@ const CourseDetailScreen = () => {
       };
     }
     
-    // Diploma in Television and Film / Broadcasting / Public Relations / Journalism
+    // Diploma in Television and Film 
     if ((courseName.includes('television') || courseName.includes('film') || courseName.includes('broadcasting') || 
          courseName.includes('public relations') || courseName.includes('journalism')) && course.name.includes('Diploma')) {
       return {
