@@ -1,6 +1,6 @@
 import React from 'react';
 import { View, Text, TouchableOpacity, StyleSheet } from 'react-native';
-import RatingButton from './RatingButton'; // Your existing rating component
+import RatingButton from './RatingButton';
 
 const CourseCard = ({ course, onView, onRatingUpdate }) => {
   return (
@@ -12,7 +12,7 @@ const CourseCard = ({ course, onView, onRatingUpdate }) => {
         </Text>
 
         <View style={styles.ratingRow}>
-          <Text style={styles.ratingText}>★ {course.rating}/6</Text>
+          <Text style={styles.ratingText}>★ {course.rating}/5</Text>
           <RatingButton
             courseId={course.id}
             initialRating={course.rating}
