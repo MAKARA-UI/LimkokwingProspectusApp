@@ -68,26 +68,14 @@ const AboutScreen = () => {
       style={styles.container}
       showsVerticalScrollIndicator={false}
     >
-      {/* Header Image */}
       <View style={styles.headerContainer}>
-        <Image
-          source={{
-            uri: "https://images.unsplash.com/photo-1523050854058-8df90110c9f1?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1770&q=80",
-          }}
-          style={styles.headerImage}
-        />
-        <View style={styles.headerOverlay} />
-        <View style={styles.headerContent}>
-          <View style={styles.titleContainer}>
+        <View style={styles.titleContainer}>
             <Text style={styles.universityName}>Limkokwing</Text>
             <Text style={styles.universitySubtitle}>University of Creative Technology</Text>
           </View>
         </View>
-      </View>
-
-      {/* Main Content */}
       <View style={styles.content}>
-        {/* Mission Statement */}
+
         <View style={styles.missionCard}>
           <Text style={styles.missionText}>
             Where creativity meets innovation. We nurture the next generation of creative leaders, 
@@ -96,8 +84,7 @@ const AboutScreen = () => {
           </Text>
         </View>
 
-        {/* Stats Section */}
-        <View style={styles.statsSection}>
+          <View style={styles.statsSection}>
           <Text style={styles.sectionTitle}>By The Numbers</Text>
           <View style={styles.statsGrid}>
             {ACHIEVEMENTS.map((stat) => (
@@ -112,7 +99,6 @@ const AboutScreen = () => {
           </View>
         </View>
 
-        {/* Key Facts */}
         <View style={styles.factsSection}>
           <Text style={styles.sectionTitle}>Why Choose Us</Text>
           {FACTS.map((fact, index) => (
@@ -128,8 +114,7 @@ const AboutScreen = () => {
           ))}
         </View>
 
-        {/* BE THE BEST Section */}
-        <View style={styles.bestSection}>
+           <View style={styles.bestSection}>
           <Text style={styles.bestTitle}>BE THE BEST</Text>
           <Text style={styles.bestSubtitle}>BE A LIMKOKWING GRADUATE</Text>
           
@@ -157,7 +142,6 @@ const AboutScreen = () => {
           </View>
         </View>
 
-        {/* Programs Overview */}
         <View style={styles.programsPreview}>
           <Text style={styles.programsTitle}>Our Faculties</Text>
           <View style={styles.programTags}>
@@ -182,8 +166,7 @@ const AboutScreen = () => {
           </View>
         </View>
 
-        {/* Contact Information */}
-        <View style={styles.contactSection}>
+         <View style={styles.contactSection}>
           <Text style={styles.contactTitle}>Get In Touch</Text>
           <View style={styles.contactCard}>
             <View style={styles.contactRow}>
@@ -203,7 +186,6 @@ const AboutScreen = () => {
           </View>
         </View>
 
-        {/* Footer Note */}
         <Text style={styles.footer}>
           Shaping creative leaders for a global future
         </Text>
@@ -221,11 +203,7 @@ const styles = StyleSheet.create({
     height: 240,
     position: 'relative',
   },
-  headerImage: {
-    width: '100%',
-    height: '100%',
-  },
-  headerOverlay: {
+   headerOverlay: {
     ...StyleSheet.absoluteFillObject,
     backgroundColor: 'rgba(10, 25, 41, 0.85)',
   },
