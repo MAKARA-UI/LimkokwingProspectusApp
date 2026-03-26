@@ -5,7 +5,7 @@ import { Ionicons } from '@expo/vector-icons';
 
 const VideoPlayer = ({ videoUri, style }) => {
   const [opening, setOpening] = useState(false);
-
+  //Function to open the video in the web browser
   const handleOpen = async () => {
     if (!videoUri) return;
     setOpening(true);
