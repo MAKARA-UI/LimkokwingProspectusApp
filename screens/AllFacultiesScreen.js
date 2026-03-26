@@ -1,4 +1,3 @@
-// screens/AllFacultiesScreen.js
 import React from 'react';
 import {
   View,
