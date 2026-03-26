@@ -8,7 +8,7 @@ import AllFacultiesScreen from '../screens/AllFacultiesScreen';
 import AboutScreen from '../screens/AboutScreen';
 
 const Stack = createNativeStackNavigator();
-
+  
 function AppNavigator() {
   return (
     <NavigationContainer>
